@@ -1,0 +1,151 @@
+{
+         padding: 0;
+         margin: 0
+    } 
+    
+    .nav-header {
+        background-color: bisque;
+        padding:  16px;
+
+
+    }
+
+    .nav-ul  
+    {  
+      list-style: none;
+        display: flex;
+        gap: 32px;
+        justify-content: space-evenly;
+        background-color: bisque; 
+    }
+    
+    a { text-decoration: none;
+        background-color: bisque;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: all 0.2s ease-in-out;
+    } 
+    a:hover
+    {
+        color: rgb(29, 28, 28);
+        text-decoration: underline;
+        transition: all 0.2s ease-in-out;
+    }
+    main 
+    {
+        background-color: burlywood;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        padding: 64px;b
+    }
+
+   .about-me 
+   {
+        front-family: Arial, Helvetica, Sans-serif;
+        
+        display flex;
+        
+        flex direction column;
+        
+        gap: 8px;
+
+        background-color: bisque;
+
+        padding: 4rem;
+   }
+   
+   .education 
+   {
+    
+    front-family: Arial, Helvetica, Sans-serif;
+        
+        display flex;
+        
+        flex direction column;
+        
+        gap: 8px;
+
+        background-color: bisque;
+
+        padding: 4rem;
+    }
+
+   article {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: bisque;
+    }
+    .article-header {
+        
+    background-color: bisque;
+    display: flex;  
+    flex-direction: column;  
+    gap: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    ol 
+    {
+        list-style: none;
+        line-height: 1.5rem;
+
+    }
+    .p-header 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .work {
+
+        front-family: Arial, Helvetica, Sans-serif;
+        
+        display flex;
+        
+        flex direction column;
+        
+        gap: 8px;
+
+        background-color: bisque;
+
+        padding: 4rem;
+
+        
+        
+        .tech-stacks {
+
+        front-family: Arial, Helvetica, Sans-serif;
+        
+        display: flex;
+        
+        flex-direction: column;
+        
+        gap: 8px;
+
+        background-color: bisque;
+
+        padding: 4rem;
+        
+        }
+
+    }
+
+
+    .techstacks-ul {
+
+        background-color: bisque;
+        padding: 4px 14px;
+        padding: 20px 0px 4px 24px;
+
+
+    }
+
+    footer {
+
+         color: rgb(29, 28, 28);
+        padding: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
