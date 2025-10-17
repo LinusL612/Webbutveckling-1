@@ -26,7 +26,7 @@
     } 
     a:hover
     {
-        color: rgb(29, 28, 28);
+        color: yellow;
         text-decoration: underline;
         transition: all 0.2s ease-in-out;
     }
