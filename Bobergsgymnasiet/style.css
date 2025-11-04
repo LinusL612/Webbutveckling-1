@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+header{
+    background-color: chocolate;
+    padding: 16px;
+    min-height: calc( 100vh - 32px );
+}
+
+.hidden {
+    display: none;
+}
+
+nav {
+    position: relative;
+    display: block;
+}
+
+ ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+ }
+
+ li {
+    list-style: none;
+ }
+
+ a {
+  font-family: "Intel One Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+ }
+
+
+ .social-img {
+    max-width: 32px;
+ } 
+
+ .menu-close-btn {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+ }
