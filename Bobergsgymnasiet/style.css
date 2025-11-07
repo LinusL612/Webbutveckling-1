@@ -10,7 +10,6 @@ button {
 
 header{
     background-color: chocolate;
-    padding: 16px;
     min-height: calc( 100vh - 32px );
 }
 
@@ -20,7 +19,8 @@ header{
 
 nav {
     position: relative;
-    display: block;
+    background-color: rgb(148, 148, 148);
+    padding: 32px;
 }
 
  ul{
@@ -44,10 +44,10 @@ nav {
     max-width: 32px;
  } 
 
- .menu-close-btn {
+ .menu-btn {
     width: 32px;
     height: 32px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 16;
+    right: 16;
  }
