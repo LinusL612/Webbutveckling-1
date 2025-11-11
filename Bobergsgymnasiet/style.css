@@ -1,32 +1,47 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Intel One Mono", monospace;
+    font-optical-sizing: auto;
 }
 
 button {
     border: none;
     background: transparent;
 }
-
-header{
-    background-color: chocolate;
-    min-height: calc( 100vh - 32px );
-}
-
 .hidden {
     display: none;
+}
+
+.top-0 {
+    top: 0;
 }
 
 nav {
     position: relative;
     background-color: rgb(148, 148, 148);
-    padding: 32px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-closed {
+    display: flex;
+    align-items: center;
+}
+
+header nav a:first-child {
+    position: relative;
+    text-decoration: none;
+    color: #111111;
+    font-weight: 600;
 }
 
  ul{
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-top: 32px;
  }
 
  li {
@@ -34,8 +49,6 @@ nav {
  }
 
  a {
-  font-family: "Intel One Mono", monospace;
-  font-optical-sizing: auto;
   font-weight: 400;
  }
 
@@ -48,6 +61,5 @@ nav {
     width: 32px;
     height: 32px;
     position: absolute;
-    top: 16;
-    right: 16;
+    right: 0;
  }
