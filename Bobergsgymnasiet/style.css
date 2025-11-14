@@ -63,3 +63,22 @@ header nav a:first-child {
     position: absolute;
     right: 0;
  }
+ .newws-card {
+    border: 1px solid #323232
+    padding: 8px;
+    border-radius: 12px;    
+}
+ .news-grind {
+    padding:16px,
+
+
+ }
+
+ .news-image {
+    max-width: 100%;
+    border-radius: 12px;
+ }
+
+ .news-title {
+    padding-top: 16px;
+ }
