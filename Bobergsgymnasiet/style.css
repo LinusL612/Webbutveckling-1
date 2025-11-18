@@ -73,6 +73,13 @@ header nav a:first-child {
 
 
  }
+ .nav-top {
+
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+ }
 
  .news-image {
     max-width: 100%;

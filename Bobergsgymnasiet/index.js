@@ -1,68 +1,67 @@
 const nav = document.querySelector("nav");
- 
- const mobileNav = document.querySelector(".mobile-nav")
- 
- const hamburgerBtn = document.querySelector ("#close")
+const mobileNav = document.querySelector(".mobile-nav");
+const openBtn = document.getElementById("open");
+const closeBtn = document.getElementById("close");
 
 
- const news = []
- {
-    img: "./img/lovethegoat.jpg",
-    title; "föredrag 22/10"
-   date: "16 oktober 2025"
- }
+const news = [
+  {
+    img: "./img/banger.mp4",
+    title: "Föredrag 22/10",
+    date: "16 oktober 2025"
+  },
+  {
+    img: "./img/LImpan.mp4",
+    title: "Åk 9 besökdag",
+    date: "5 oktober 2025"
+  },
+  {
+    img: "./img/lovecool.mp4",
+    title: "Föräldrarmöte åk1 9/9",
+    date: "2 september 2025"
+  }
+];
 
- {
-    img: "./img/monke sorry1.jpg",
-    title; "åk 9 besökdag"
-   date: "5 oktober 2025"
- }
 
- {
-    img: "lovecool.mp4",
-    title; "föräldrarmöte åk1 9/9"
-   date: "2 september 2025"
- }
-
+const openMenu = () => {
+  mobileNav.classList.remove("hidden"); 
+  openBtn.classList.add("hidden");      
+  closeBtn.classList.remove("hidden");  
+};
 
 const closeMenu = () => {
-    
-    mobileNavNav.classList.add("hidden")
-    nav.classList.add("nav-closed")
-    hamburgerBtn.classlist.remove("hidden")
-}
-    
-const openMenu = () => {
+  mobileNav.classList.add("hidden");    
+  openBtn.classList.remove("hidden");   
+  closeBtn.classList.add("hidden");     
+};
 
-    hamburgerBtn.classList.add("hidden")
-    nav.classList.remove("nav-closed")
-    mobileNav.classList.remove("hidden")
-}
 
-const menuCloseBtn = document.querySelector ("#menu-close")
-.addEventListener("click", closeMenu);
-    
+openBtn.addEventListener("click", openMenu);
+closeBtn.addEventListener("click", closeMenu);
 
-const menuOpenBtn = document.querySelector ("#menu-open")
-.addEventListener("click", openMenu);
 
 const renderNews = () => {
-    const container = document.querySelector(".news-grind");
+  const container = document.querySelector(".news-grind");
 
-    news.forEach((news) =>  {
-      const card = document.createElement("div");
-      card.className = "news-card";
-      
-      card.innerHTML = `
-        <img src "${news.img} alt="${news.title}" class="news-image" />
-        <h3 class="news.title">${news.title}</h3>
-        <p class="news.date">${news.date}</p>
+  news.forEach((item) => {
+    const card = document.createElement("div");
+    card.className = "news-card";
 
-      `;
+    
+    const media = item.img.endsWith(".mp4")
+      ? `<video class="news-image" controls><source src="${item.img}" type="video/mp4"></video>`
+      : `<img src="${item.img}" alt="${item.title}" class="news-image" />`;
 
-      container.appendChild(card);
-    });
+    card.innerHTML = `
+      ${media}
+      <h3 class="news-title">${item.title}</h3>
+      <p class="news-date">${item.date}</p>
+    `;
+
+    container.appendChild(card);
+  });
 };
+
 
 renderNews();
 
