@@ -89,3 +89,20 @@ header nav a:first-child {
  .news-title {
     padding-top: 16px;
  }
+
+ /* styling för artikeldetaljsidan */
+ .news-container {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 16px;
+}
+
+   .back-link {
+      color: #111111;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+   }
+.back-link:hover {
+   text-decoration: underline;
+}
