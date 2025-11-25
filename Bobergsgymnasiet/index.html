@@ -9,15 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,">
     <link rel="stylesheet" href="./style.css">
     
-    <script src="index.js" defer></script>
     
     <title>Bobergsgymnasiet</title>
 </head>
-    <body>
-        <header>
+<body>
+    <header>
             <nav class="nav-closed">
                 <section class ="nav.top"> 
-                  <a href="index.js">Bobergsgymnasiet</a>
+                    <a href="index.js">Bobergsgymnasiet</a>
                     <div class="relative">
                         <button type="button" class="menu-btn" id="close"><img src="./img/x-solid-full.svg"></button> 
                         <button type="button" class="menu-btn" id="open"><img src="./img/bars-solid-full.svg"></button>
@@ -25,7 +24,7 @@
                 </section>
 
             <hr />
-
+            
                 <section class ="mobile-nav hidden">
                     <ul>
                         <li><a>Hem</a></li>
@@ -45,17 +44,24 @@
                 </section>
                 
 
-                   
-
+                
+                
             </nav>
         </header> 
         <main>
             <article>
                 <p>Nyheter</p>
                 <hr />
-
+                
                 <div class="news-grind"></div>
             </article>
+            <article>
+                <div id="new-news">
+                    here i go
+                </div>
+                <button onclick="showhide()" id="myBtn">show/hide</button>
+            </article>
         </main>
+      <script src="index.js" defer></script>
     </body>
-</html>s
+</html>

@@ -64,9 +64,9 @@ header nav a:first-child {
     right: 0;
  }
  .newws-card {
-    border: 1px solid #323232
-    padding: 8px;
-    border-radius: 12px;    
+    border: 1px solid #323232;
+    padding:8px;
+    border-radius:12px;    
 }
  .news-grind {
     padding:16px,
@@ -105,4 +105,20 @@ header nav a:first-child {
    }
 .back-link:hover {
    text-decoration: underline;
+}
+#more {display: none;}
+
+#myBtn {
+   width: 20%;
+}
+
+#new-news {
+   border:2px solid black;
+   background-color: gray;
+   color:white;
+   font-weight:bold;
+   margin:4px;
+   padding:20px;
+   width:20%;
+   display: none;
 }

@@ -59,7 +59,7 @@ const renderNews = () => {
     `;
 
     card.addEventListener("click"), () => {
-      windows.location,href = 'news.html?id=${news.id}';
+      windows.location.href = 'news.html?id=${news.id}';
     }
 
     container.appendChild(card);
@@ -98,4 +98,17 @@ if (newsItem) {
 //kör rätt funktion beroende på vilken sida vi är på
 if (document.querySelector("news-grid"))renderNews();
 if (document.querySelector(".news-cntent")) renderNews
+
+const divContainer = document.querySelector('#new-news');
+let isclicked = true;
+
+window.showhide = function(){
+    if (isclicked ) { 
+      divContainer.style.display = 'block';
+      isclicked = false;
+    } else{
+      divContainer.style.display = 'none';
+      isclicked = true;
+    }
+}
 
