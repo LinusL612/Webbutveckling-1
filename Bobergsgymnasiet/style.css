@@ -110,15 +110,15 @@ header nav a:first-child {
 
 #myBtn {
    width: 20%;
-}
-
-#new-news {
-   border:2px solid black;
-   background-color: gray;
-   color:white;
-   font-weight:bold;
-   margin:4px;
    padding:20px;
-   width:20%;
+   background-color: blue;
+   text-decoration: wavy;
+}
+.img-nav {
+   width:200px;
+   height:150px;
+
+}
+#new-news {
    display: none;
 }

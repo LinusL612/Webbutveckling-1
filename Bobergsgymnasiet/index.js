@@ -58,9 +58,10 @@ const renderNews = () => {
       <p class="news-date">${item.date}</p>
     `;
 
-    card.addEventListener("click"), () => {
-      windows.location.href = 'news.html?id=${news.id}';
-    }
+  card.addEventListener("click", () => {
+    window.location.href = `news.html?id=${item.id}`;
+  });
+    
 
     container.appendChild(card);
   });
@@ -74,7 +75,7 @@ const renderNewsDetail = () => {
   if (!container) return
 
   // Hämta ID från URL-parametern
-const urlParams = new URLSearchParams(windows.location.search)
+const urlParams = new URLSearchParams(window.location.search)
 const newsId = urlParams.get("id");
 
 //Hitta rätt artikel
@@ -96,19 +97,53 @@ if (newsItem) {
 };
 
 //kör rätt funktion beroende på vilken sida vi är på
-if (document.querySelector("news-grid"))renderNews();
-if (document.querySelector(".news-cntent")) renderNews
+if (document.querySelector(".news-grid"))renderNews();
+if (document.querySelector(".news-content")) renderNews
 
-const divContainer = document.querySelector('#new-news');
-let isclicked = true;
+const images = [
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png",
+  "./img/monke sorry1.png"
+];
 
-window.showhide = function(){
-    if (isclicked ) { 
-      divContainer.style.display = 'block';
-      isclicked = false;
-    } else{
-      divContainer.style.display = 'none';
-      isclicked = true;
-    }
+let shown = 0;
+const perClick = 3;
+
+const container = document.querySelector(".news-grind");
+
+const myBtn = document.getElementById("myBtn");
+
+function showMoreImages() {
+  const slice = images.slice(shown, shown + perClick);
+
+  slice.forEach(src => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.className = "preview-img";
+    container.appendChild(img);
+  });
+
+  shown += perClick;
+
+  if (shown >= images.length) {
+    myBtn.style.display = "none";
+  }
 }
+
+myBtn.addEventListener("click", showMoreImages);
+
+showMoreImages();
 
