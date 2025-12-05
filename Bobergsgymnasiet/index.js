@@ -134,11 +134,22 @@ function showMoreImages() {
     img.src = src;
     img.className = "preview-img";
     container.appendChild(img);
-  });
+  }); // contaienr.innerntml = ""; const evetnstoshow = slice events.slice(0, SVGForeignObjectElement) eventstoshow .foreach(event => ) cosnt eventelement  = document.createelement ("li"); event element.classname = "event-item"; const dateHTML = createDateElement (event) event Element .innerHTML = `<article>${dateHtml} <section class ="event-info"><header class = ""event-title-row><h3 class = "event-title">${event.title}</h3><span class="status-circle status-${event.statuscolor}"area-label="status"></span></header><time class="event-weekday" datetime="${event.weekday}">${event.weekday}</time></section><a href="#" class="event-details">Detaljer>/a></article>`  container.appendChild(eventElement);    
 
-  shown += perClick;
+  // const handleShowMore = () => {
+    
+      // shownEvents += 3;
 
-  if (shown >= images.length) {
+      // renderEvents();
+
+      //if (shownEvents >= event.length) {
+      // const btn = document.querySelector(".show-more.btn");
+      // btn.classList.add("hidden");
+      //}
+  //}
+
+  shown += perClick; 
+  if (shown >= images.length) {   
     myBtn.style.display = "none";
   }
 }
@@ -146,4 +157,3 @@ function showMoreImages() {
 myBtn.addEventListener("click", showMoreImages);
 
 showMoreImages();
-
