@@ -1,124 +1,159 @@
-* {
-    padding: 0;
-    margin: 0;
-    font-family: "Intel One Mono", monospace;
-    font-optical-sizing: auto;
+ * {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 }
 
 button {
-    border: none;
-    background: transparent;
-}
-.hidden {
-    display: none;
-}
-
-.top-0 {
-    top: 0;
+  border: none;
+  background: transparent;
 }
 
 nav {
-    position: relative;
-    background-color: rgb(148, 148, 148);
-    padding: 16px;
-    display: flex;
-    align-items: center;
+  background-color: #f1f1f1;
+  padding: 16px;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
 }
 
 .nav-closed {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 header nav a:first-child {
-    position: relative;
-    text-decoration: none;
-    color: #111111;
-    font-weight: 600;
+  position: relative;
+  text-decoration: none;
+  color: #111111;
+  font-weight: 600;
 }
 
- ul{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 32px;
- }
+.hidden {
+  display: none;
+}
 
- li {
-    list-style: none;
- }
+.top-0 {
+  top: 0;
+}
 
- a {
+.relative {
+  position: relative;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
   font-weight: 400;
- }
-
-
- .social-img {
-    max-width: 32px;
- } 
-
- .menu-btn {
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    right: 0;
- }
- .newws-card {
-    border: 1px solid #323232;
-    padding:8px;
-    border-radius:12px;    
-}
- .news-grind {
-    padding:16px,
-
-
- }
- .nav-top {
-
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
- }
-
- .news-image {
-    max-width: 100%;
-    border-radius: 12px;
- }
-
- .news-title {
-    padding-top: 16px;
- }
-
- /* styling för artikeldetaljsidan */
- .news-container {
-   max-width: 800px;
-   margin: 0 auto;
-   padding: 16px;
 }
 
-   .back-link {
-      color: #111111;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1.1rem;
-   }
+.social-img {
+  max-width: 32px;
+}
+
+.menu-btn {
+  width: 32px;
+}
+
+.news-grid {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.news-card {
+  border: 1px solid #323232;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.news-image {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.news-title {
+  padding-top: 16px;
+}
+
+/* Styling för artikeldetaljsidan */
+.news-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.back-link {
+  color: #111111;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
 .back-link:hover {
-   text-decoration: underline;
+  text-decoration: underline;
 }
-#more {display: none;}
 
-#myBtn {
-   width: 20%;
-   padding:20px;
-   background-color: blue;
-   text-decoration: wavy;
+/* Event-list */
+.event-article {
+   padding: 16px;
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
 }
-.img-nav {
-   width:200px;
-   height:150px;
 
+.event-list {
+   margin-top: 24px;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
 }
-#new-news {
-   display: none;
+
+.event-card {
+   background-color: purple;
+   border-radius: 8px;
+}
+.event-wrapper {
+   padding: 16px;
+   background-color: hotpink;
+   display: 16px;
+   gap: 16px;
+}
+
+.event-date {
+   background-color: palegreen;
+   display: flex;
+   flex-direction: column;
+   border-radius: 8px;
+   color: gold;
+   font-weight: 700;
+}
+
+.date-day {
+   padding: 8px;
+}
+
+.date-month {
+   padding: 8px;
+   border-radius: 0px 0px 8px 8px;
+   background-color: teal;
 }

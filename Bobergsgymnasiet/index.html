@@ -1,67 +1,83 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,">
-    <link rel="stylesheet" href="./style.css">
-    
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="index.js" defer></script>
+
     <title>Bobergsgymnasiet</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-            <nav class="nav-closed">
-                <section class ="nav.top"> 
-                    <a href="index.js">Bobergsgymnasiet</a>
-                    <div class="relative">
-                        <button type="button" class="menu-btn" id="close"><img src="./img/x-solid-full.svg"></button> 
-                        <button type="button" class="menu-btn" id="open"><img src="./img/bars-solid-full.svg"></button>
-                    </div>
-                </section>
+      <nav>
+        <section class="nav-top relative">
+          <a href="index.html">Bobergsgymnasiet</a>
 
-            <hr />
-            
-                <section class ="mobile-nav hidden">
-                    <ul>
-                        <li><a>Hem</a></li>
-                        <li><a>Om bobergsgymnasiet</a></li>
-                        <li><a>Global Classroom</a></li>
-                        <li><a>Program</a></li>
-                        <li><a>För elever</a></li>
-                        <li><a>Elevhälsa</a></li>
-                        <li><a>Kontakt</a></li>
-                    
-                        <li><a><img src="./img/facebook-f-brands-solid-full.svg" class="social-img"/></a></li>
-                    
-                        <li><a><img src="./img/instagram-brands-solid-full.svg" class="social-img"/></a></li>
-                    </ul>
-                
-                   
-                </section>
-                
+          <button type="button" class="menu-btn hidden" id="menu-close">
+            <img src="./img/x-solid-full.svg" />
+          </button>
 
-                
-                
-            </nav>
-        </header> 
-        <main>
-            <article>
-                <p>Nyheter</p>
-                <hr />
-                
-                <div class="news-grind"></div>
-            </article>
-            <article>
-                <div id="new-news">
+          <button type="button" class="menu-btn" id="menu-open">
+            <img src="./img/bars-solid-full.svg" />
+          </button>
+        </section>
 
-                </div>
-                <button id="myBtn">visaMER</button>
-            </article>
-        </main>
-      <script src="index.js" defer></script>
-    </body>
+        <hr />
+
+        <section class="mobile-nav hidden">
+          <ul>
+            <li><a>Hem</a></li>
+            <li><a>Om Bobergsgymnasiet</a></li>
+            <li><a>Global Classroom</a></li>
+            <li><a>Program</a></li>
+            <li><a>För elever</a></li>
+            <li><a>Elevhälsa</a></li>
+            <li><a>Kontakt</a></li>
+            <li>
+              <a
+                ><img
+                  src="./img/facebook-f-brands-solid-full.svg"
+                  class="social-img"
+              /></a>
+            </li>
+            <li>
+              <a
+                ><img
+                  src="./img/instagram-brands-solid-full.svg"
+                  class="social-img"
+              /></a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <p>Nyheter</p>
+        <hr />
+
+        <div class="news-grid"></div>
+      </article>
+
+      <article class="event-article">
+        <h2>Aktuella händelser</h2>
+        <hr />
+
+        <div class="event-list"></div>
+
+        <div class="show-more-container">
+          <button type="button" class="show-more-btn">Visa fler</button>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>
