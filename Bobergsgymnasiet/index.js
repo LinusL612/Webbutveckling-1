@@ -226,6 +226,7 @@ const renderEvents = () => {
 
     eventElement.innerHTML = `
       <article class="event-card">
+        <hr />
         <div class ="event-wrapper">
         ${dateHtml}
         </div>
@@ -238,7 +239,7 @@ const renderEvents = () => {
           <time class="event-weekday" datetime="${event.weekday}">${event.weekday}</time>
         </section>
         <a href="#" class="event-details">Detaljer</a>
-        <hr />
+        <hr class="hr" />
       </article>
     `;
 
