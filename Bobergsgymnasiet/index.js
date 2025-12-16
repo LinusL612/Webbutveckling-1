@@ -268,3 +268,11 @@ if (showMoreBtn) showMoreBtn.addEventListener("click", handleShowMore);
 if (document.querySelector(".news-grid")) renderNews();
 if (document.querySelector(".news-content")) renderNewsDetail();
 if (document.querySelector(".event-list")) renderEvents();
+
+if( screen.width <= 480 ) {
+
+}
+
+if (screen.width >= 480) {
+  
+}
