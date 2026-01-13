@@ -1,15 +1,27 @@
 #rubrik {
     color:rgb(141, 74, 27);
-    padding:14px;
+    align-items: center;
 }
 
-#bakgrund {
+body {
     background-color: burlywood;
+    padding:10px;
 }
 #paragraph {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-#älskar {
+#intressen {
     font-weight: 500;
+    gap:10px;
+}
+
+.h2 {
+    padding: 10px;
+}
+
+img {
+    width: 60%;
+    max-height: 500px;
+    float:right;
 }
