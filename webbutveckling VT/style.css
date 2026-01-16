@@ -1,27 +1,64 @@
+:root {
+    --base-color: burlywood;
+    --Rubrik-text-color: rgb(145, 77, 21);
+    --text-color: black;
+    --button-color: black;
+}
+
+
 #rubrik {
-    color:rgb(141, 74, 27);
+    color: var(--Rubrik-text-color);
     align-items: center;
+    font-size: 15vw;
+}
+
+.mörkmode {
+    --base-color: rgb(14, 14, 14);
+    --Rubrik-text-color: rgb(111, 110, 110);
+    --text-color: white;
+    --button-color: white;
 }
 
 body {
-    background-color: burlywood;
+    background-color: var(--base-color);
     padding:10px;
 }
+
 #paragraph {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    color: var(--text-color);
+    font-size: 3vw;
 }
+
 #intressen {
     font-weight: 500;
     gap:10px;
+    color: var(--text-color);
+    font-size: 3vw;
 }
 
 .h2 {
     padding: 10px;
+    color: var(--text-color);
+    font-size: 6vw;
 }
 
 img {
-    width: 60%;
-    max-height: 500px;
+    width: 100%;
+    height: 100%;
     float:right;
+    position:relative;
+    max-height: 60vw;
+    max-width: 60vw;
+}   
+
+#lightmodebutton {
+    height:50px;
+    width: 50px;
+    background-color:var(--button-color);
+    border-radius: 50px;
+    padding: 0;
+    position: fixed;
+    top: 15px;
+    right:15px;
 }
