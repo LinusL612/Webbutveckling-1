@@ -62,3 +62,10 @@ img {
     top: 15px;
     right:15px;
 }
+
+#fot {
+    text-decoration:var(--text-color);
+    padding:0.5rem;
+    display:flex;
+    align-items:center;
+}
