@@ -31,7 +31,7 @@ body {
     font-size: 3vw;
 }
 
-#intressen {
+.list {
     font-weight: 500;
     gap:10px;
     color: var(--text-color);
